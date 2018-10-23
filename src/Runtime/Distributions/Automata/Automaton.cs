@@ -2924,12 +2924,6 @@ namespace Microsoft.ML.Probabilistic.Distributions.Automata
 
         #region Serialization
 
-        [OnDeserializing]
-        private void OnDeserializing(StreamingContext ctx)
-        {
-            states.Clear();
-        }
-
         /// <summary>
         /// Writes the current automaton.
         /// </summary>
